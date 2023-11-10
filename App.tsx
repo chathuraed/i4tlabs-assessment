@@ -1,7 +1,13 @@
 import React from 'react';
+import {NavigationContainer} from '@react-navigation/native';
+import MainStackNavigator from './src/navigation';
 
-import Login from './src/screens/Login';
-
-export default function Screen() {
-  return <Login />;
+function App() {
+  return (
+    <NavigationContainer>
+      <MainStackNavigator />
+    </NavigationContainer>
+  );
 }
+
+export default App;

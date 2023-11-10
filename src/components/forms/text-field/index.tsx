@@ -15,7 +15,6 @@ const TextField: React.FC<TextFieldProps> = props => {
       style={{
         padding: 16,
         borderWidth: 2,
-        marginHorizontal: 16,
         marginBottom: 24,
         borderRadius: 5,
         borderColor: '#cbd3da',

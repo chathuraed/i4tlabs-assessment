@@ -1,26 +1,33 @@
 import React, {useState} from 'react';
 import {View, Text, StyleSheet, SafeAreaView} from 'react-native';
-import {login} from '../api';
 import Layout from '../components/layout';
 import TextField from '../components/forms/text-field';
 import PrimaryButton from '../components/button';
+import {RootStackParamList} from '../../App';
+import {NativeStackNavigationProp} from '@react-navigation/native-stack';
 
-const Authentication = () => {
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
+type LoginScreenProps = {
+  navigation: NativeStackNavigationProp<RootStackParamList, 'Login'>;
+};
+
+const LoginScreen: React.FC<LoginScreenProps> = ({navigation}) => {
+  const [username, setUsername] = useState<string>('');
+  const [password, setPassword] = useState<string>('');
 
   const handleLogin = async () => {
-    const response = await login(username, password);
+    // const response = await login(username, password);
 
-    if (response.success) {
-      console.log(response);
-    } else {
-      // Handle authentication failure
-    }
+    // if (response.success) {
+    //   console.log(response);
+    // } else {
+    //   // Handle LoginScreen failure
+    // }
+
+    navigation.navigate('Home');
   };
 
   return (
-    <SafeAreaView style={[styles.sav]}>
+    <SafeAreaView style={styles.sav}>
       <Layout scrollEnabled={true}>
         <View style={styles.container}>
           <Text style={styles.title}>Practical Test</Text>
@@ -56,13 +63,11 @@ const styles = StyleSheet.create({
   sav: {
     flex: 1,
   },
-  scroll_view: {
-    flexGrow: 1,
-  },
   container: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'stretch',
+    marginHorizontal: 16,
   },
   title: {
     alignSelf: 'center',
@@ -72,4 +77,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Authentication;
+export default LoginScreen;

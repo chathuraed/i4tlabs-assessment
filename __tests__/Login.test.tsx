@@ -2,13 +2,13 @@ import React from 'react';
 import {render, fireEvent, waitFor} from '@testing-library/react-native';
 // Your Authentication component
 import api from '../src/api';
-import Authentication from '../src/screens/Login';
+import LoginScreen from '../src/screens/LoginScreen';
 
 describe('Authentication', () => {
   it('should allow the user to log in', async () => {
     const loginMock = jest.spyOn(api, 'login');
 
-    const component = render(<Authentication />);
+    const component = render(<LoginScreen />);
     const usernameInput = component.root.findByProps({
       testID: 'username-input',
     });

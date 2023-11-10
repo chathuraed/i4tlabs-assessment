@@ -37,7 +37,6 @@ const PrimaryButton: React.FC<PrimaryButtonProps> = props => {
 
 const styles = StyleSheet.create({
   button: {
-    marginHorizontal: 16,
     padding: 16,
     borderRadius: 5,
   },
