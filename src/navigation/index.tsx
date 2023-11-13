@@ -1,7 +1,7 @@
 // mainStackNavigator.js
 import React from 'react';
 
-import LoginScreen from '../screens/LoginScreen';
+import LoginScreen from '../features/auth/login/LoginScreen';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import BottomTabNavigator from './bottom-tab-navigator';
 import {RootStackParamList} from './types';

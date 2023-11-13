@@ -1,9 +1,9 @@
 // productsStack.js
 import React from 'react';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import ProductsScreen from '../screens/ProductsScreen';
-import ProductDetailsScreen from '../screens/ProductDetailsScreen';
-import CheckoutScreen from '../screens/CheckoutScreen';
+import ProductsScreen from '../features/home/ProductsScreen';
+import ProductDetailsScreen from '../features/home/ProductDetailsScreen';
+import CheckoutScreen from '../features/cart/CheckoutScreen';
 import {ProductStackParamList} from './types';
 
 const Stack = createNativeStackNavigator<ProductStackParamList>();

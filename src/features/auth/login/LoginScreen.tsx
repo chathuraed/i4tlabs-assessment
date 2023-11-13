@@ -1,9 +1,9 @@
 import React, {useState} from 'react';
 import {View, Text, StyleSheet, SafeAreaView} from 'react-native';
-import Layout from '../components/layout';
-import TextField from '../components/forms/text-field';
-import PrimaryButton from '../components/button';
-import {RootStackParamList} from '../../App';
+import Layout from '../../../components/layout';
+import TextField from '../../../components/forms/text-field';
+import PrimaryButton from '../../../components/button';
+import {RootStackParamList} from '../../../../App';
 import {NativeStackNavigationProp} from '@react-navigation/native-stack';
 
 type LoginScreenProps = {

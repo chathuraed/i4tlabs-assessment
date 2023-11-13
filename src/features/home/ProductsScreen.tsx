@@ -7,12 +7,12 @@ import {
   Image,
   TouchableOpacity,
 } from 'react-native';
-import Layout from '../components/layout';
+import Layout from '../../components/layout';
 
-import Products from '../assets/mocks/products.json';
+import Products from '../../assets/mocks/products.json';
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
 import {CompositeScreenProps} from '@react-navigation/native';
-import {ProductStackParamList, RootStackParamList} from '../navigation/types';
+import {ProductStackParamList, RootStackParamList} from '../../navigation/types';
 
 type ProductsScreenProps = CompositeScreenProps<
   NativeStackScreenProps<ProductStackParamList, 'ProductList'>,

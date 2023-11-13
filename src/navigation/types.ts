@@ -1,5 +1,5 @@
 import {NavigatorScreenParams} from '@react-navigation/native';
-import {Product} from '../screens/ProductDetailsScreen';
+import {Product} from '../features/home/ProductDetailsScreen';
 
 export type RootStackParamList = {
   Login: undefined;

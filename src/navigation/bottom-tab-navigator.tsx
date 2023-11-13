@@ -1,8 +1,8 @@
 // bottomTabNavigator.js
 import React from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import CartScreen from '../screens/CartScreen';
-import ProfileScreen from '../screens/ProfileScreen';
+import CartScreen from '../features/cart/CartScreen';
+import ProfileScreen from '../features/profile/ProfileScreen';
 import ProductsStack from './product-stack-navigator';
 import TabIcon from '../components/tab-icon';
 import {BottomTabParamList} from './types';

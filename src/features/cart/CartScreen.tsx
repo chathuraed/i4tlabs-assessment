@@ -6,13 +6,12 @@ import {
   Image,
   TouchableOpacity,
 } from 'react-native';
-import Layout from '../components/layout';
+import Layout from '../../components/layout';
 
-import CartData from '../assets/mocks/cart.json';
+import CartData from '../../assets/mocks/cart.json';
 import {Text} from 'react-native';
-import PrimaryButton from '../components/button';
-import {RouteProp} from '@react-navigation/native';
-import {ProductStackParamList} from '../navigation/types';
+import PrimaryButton from '../../components/button';
+import {ProductStackParamList} from '../../navigation/types';
 import {NativeStackNavigationProp} from '@react-navigation/native-stack';
 
 type CartScreenProps = {

@@ -1,16 +1,14 @@
 import React from 'react';
 import {View, Text, StyleSheet, SafeAreaView} from 'react-native';
-import Layout from '../components/layout';
+import Layout from '../../components/layout';
 
-interface ProfileScreenProps {}
+interface CheckoutScreenProps {}
 
-const ProfileScreen: React.FC<ProfileScreenProps> = () => {
+const CheckoutScreen: React.FC<CheckoutScreenProps> = () => {
   return (
     <SafeAreaView style={styles.sav}>
       <Layout scrollEnabled={true}>
-        <View style={styles.container}>
-          <Text style={styles.title}>Profile</Text>
-        </View>
+        <View style={styles.container}></View>
       </Layout>
     </SafeAreaView>
   );
@@ -31,4 +29,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default ProfileScreen;
+export default CheckoutScreen;

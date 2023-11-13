@@ -2,7 +2,7 @@ import React from 'react';
 import {render, fireEvent, waitFor} from '@testing-library/react-native';
 // Your Authentication component
 import api from '../src/api';
-import LoginScreen from '../src/screens/LoginScreen';
+import LoginScreen from '../src/features/auth/login/LoginScreen';
 
 describe('Authentication', () => {
   it('should allow the user to log in', async () => {

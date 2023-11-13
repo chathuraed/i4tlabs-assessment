@@ -1,13 +1,13 @@
 import React from 'react';
 import {View, Text, StyleSheet, SafeAreaView} from 'react-native';
-import Layout from '../components/layout';
+import Layout from '../../components/layout';
 import {RouteProp} from '@react-navigation/native';
 import {NativeStackNavigationProp} from '@react-navigation/native-stack';
 import {Image} from 'react-native';
 import {Rating} from 'react-native-stock-star-rating';
 import Slider from '@react-native-community/slider';
-import PrimaryButton from '../components/button';
-import {ProductStackParamList} from '../navigation/types';
+import PrimaryButton from '../../components/button';
+import {ProductStackParamList} from '../../navigation/types';
 
 export interface Product {
   id: number;
